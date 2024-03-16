@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Recipes</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const titleText = "Odin Recipes";
+        let index = 0;
+
+        function updateTitle() {
+          document.title = titleText.substring(0, index + 1);
+          index++;
+          if (index <= titleText.length) {
+            setTimeout(updateTitle, 200); // Adjust typing speed (in milliseconds)
+          }
+        }
+
+        updateTitle();
+      });
+    </script>
+  </head>
+  <body>
+    <h1 align="center">Odin Recipes</h1>
+    <p align="center">
+      So here is my first effort about Odin recipes. Please take a look.
+    </p>
+    <div align="center">
+      <hr />
+
+      <a href="recipes/lasagna.html">
+        <img
+          src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F10%2F31%2FHomemade-Lasagna-lutzflcat-1x1-1-2000.jpg&q=60&c=sc&poi=auto&orient=true&h=512"
+          width="200"
+          height="200"
+          alt="Lasagna Image"
+        /><br />
+        <span>Lasagna Recipes</span>
+      </a>
+    </div>
+    <br /><br />
+    <div align="center">
+      <a href="recipes/basic-burger.html">
+        <img
+          src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2294328.jpg&q=60&c=sc&poi=auto&orient=true&h=512"
+          width="200"
+          height="200"
+          alt="Lasagna Image"
+        /><br />
+        <span>Basic Burger Recipes</span>
+      </a>
+    </div>
+    <br />
+    <br />
+    <div align="center">
+      <a href="recipes/pizza.html">
+        <img
+          src="https://www.allrecipes.com/thmb/GUEZE9ahjA7WyTBd9c6BvNImJsw=/160x90/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20171-quick-and-easy-pizza-crust-VilmaNg-4x3-f3d3bfe73e3a47b6b65a7da6de3f213d.jpg"
+          width="200"
+          alt="Pizza Image"
+        /><br />
+        <span>Pizza Recipes</span>
+      </a>
+    </div>
+    <br />
+    <footer align="center">
+      <div id="typingSection">
+        <span id="typingAnimation"></span>
+      </div>
+    </footer>
+    <script>
+      const text = "Made with ♡ By Tou";
+      let index = 0;
+      const typingSpeed = 100; // Adjust typing speed (in milliseconds)
+      let animationStarted = false;
+
+      function typeText() {
+        if (index < text.length) {
+          document.getElementById("typingAnimation").textContent +=
+            text.charAt(index);
+          index++;
+          setTimeout(typeText, typingSpeed);
+        }
+      }
+
+      function startTypingAnimation() {
+        if (!animationStarted) {
+          animationStarted = true;
+          typeText();
+        }
+      }
+
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function onScroll() {
+        const typingSection = document.getElementById("typingSection");
+        if (isElementInViewport(typingSection)) {
+          startTypingAnimation();
+          window.removeEventListener("scroll", onScroll);
+        }
+      }
+
+      // Add event listener for scroll
+      window.addEventListener("scroll", onScroll);
+    </script>
+
+    <script>
+      if (!localStorage.getItem("alertShown")) {
+        alert("My demo project Odin recipe");
+        localStorage.setItem("alertShown", "true");
+      }
+    </script>
+  </body>
+</html>
