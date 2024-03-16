@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lasagna Recipes</title>
+  </head>
+  <body>
+    <a href="/">Odin Recipes | Home</a>
+    <h1>Lasagna Recipes</h1>
+    <img
+      src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F10%2F31%2FHomemade-Lasagna-lutzflcat-1x1-1-2000.jpg&q=60&c=sc&poi=auto&orient=true&h=512"
+      width="200"
+      height="200"
+      alt="Lasagna Image"
+    />
+    <h2>Homemade Lasagna Ingredients</h2>
+    <p>
+      These are the ingredients you'll need to make this top-rated homemade
+      lasagna recipe:
+    </p>
+    <ul>
+      <li>
+        <span
+          ><b>Meat:</b> This lasagna recipe starts with a pound of ground meat
+          (½ pound ground pork, ½ pound lean ground beef).
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Onion:</b> A diced onion is cooked until translucent with the
+          ground meat.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Sugar:</b> A dash of sugar balances out all of the acidity from
+          the tomatoes.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Spices and seasonings:</b> This homemade lasagna is seasoned with
+          dried basil, dried oregano, salt, and black pepper.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Noodles:</b> Of course, you'll need lasagna noodles! This recipe
+          calls for uncooked noodles, but you can use the oven-ready variety to
+          save time.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Cheese:</b> The cheese layer is made up of cottage cheese and
+          Parmesan. You'll also need shredded mozzarella.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Eggs:</b> Eggs make the cheese layer extra creamy. Plus, they act
+          as a binding agent (which means they hold the layer together).
+        </span>
+      </li>
+    </ul>
+    <img
+      src="https://www.allrecipes.com/thmb/p_EiwoviTKmM-tmLK1GO1Y2kWPs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/19344_homemade-lasagna_Rita2-1x1-1-b4f53c3ba2f4475c97665908a6fd1783.jpg"
+      width="200"
+      height="200"
+      alt="Lasagna"
+    />
+    <h2>How to Make Lasagna</h2>
+    <p>
+      Making homemade lasagna much easier than it looks. You'll find the full,
+      step-by-step recipe below — but here's a brief overview of what you can
+      expect:
+    </p>
+    <ol>
+      <li>
+        <span
+          ><b>Cook the meat:</b> Cook the ground meat in a skillet until browned
+          and crumbly. Add the onion and continue cooking until it's
+          translucent. Stir in the canned tomato products, half of the parsley,
+          garlic, basil, 1.5 teaspoons of salt, oregano, and sugar.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Cook the noodles:</b> C Boil the lasagna noodles in lightly salted
+          water until they're al dente.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Make the cheese layer:</b> Mix cottage cheese, Parmesan cheese,
+          eggs, the remaining parsley, the remaining salt, and pepper in a bowl.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Assemble the lasagna:</b> Layer the ingredients according to the
+          recipe (starting with sauce and ending with mozzarella) until the
+          lasagna is assembled.
+        </span>
+      </li>
+      <li>
+        <span
+          ><b>Bake the lasagna:</b> Cover with foil and bake in the preheated
+          oven for about half an hour. Remove the foil and continue baking until
+          the top is golden brown.
+        </span>
+      </li>
+    </ol>
+    <table cellpadding="10" cellspacing="0" border="1">
+      <tr>
+        <td colspan="4" align="center" style="font-size: 24px">
+          <strong>Nutrition Facts (per serving)</strong>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center" style="font-size: 18px">
+          <strong>Calories</strong>
+        </td>
+        <td align="center" style="font-size: 18px"><strong>Fat</strong></td>
+        <td align="center" style="font-size: 18px"><strong>Carbs</strong></td>
+        <td align="center" style="font-size: 18px"><strong>Protein</strong></td>
+      </tr>
+      <tr>
+        <td align="center">638</td>
+        <td align="center">27g</td>
+        <td align="center">54g</td>
+        <td align="center">46g</td>
+      </tr>
+    </table>
+    <br />
+    <footer>
+      <div>
+        <a href="/recipes/basic-burger.html">Previous</a> | <a href="/">Home</a> |
+        <a href="/recipes/pizza.html">Next</a>
+      </div>
+      <div id="typingSection">
+        <span id="typingAnimation"></span>
+      </div>
+    </footer>
+    <script>
+      const text = "Made with ♡ By Tou";
+      let index = 0;
+      const typingSpeed = 100; // Adjust typing speed (in milliseconds)
+      let animationStarted = false;
+
+      function typeText() {
+        if (index < text.length) {
+          document.getElementById("typingAnimation").textContent +=
+            text.charAt(index);
+          index++;
+          setTimeout(typeText, typingSpeed);
+        }
+      }
+
+      function startTypingAnimation() {
+        if (!animationStarted) {
+          animationStarted = true;
+          typeText();
+        }
+      }
+
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function onScroll() {
+        const typingSection = document.getElementById("typingSection");
+        if (isElementInViewport(typingSection)) {
+          startTypingAnimation();
+          window.removeEventListener("scroll", onScroll);
+        }
+      }
+
+      // Add event listener for scroll
+      window.addEventListener("scroll", onScroll);
+    </script>
+  </body>
+</html>

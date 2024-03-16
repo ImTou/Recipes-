@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Burger</title>
+  </head>
+  <body>
+    <a href="/">Odin Recipes | Home</a>
+    <h1>The Perfect Basic Burger</h1>
+    <img
+      src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2294328.jpg&q=60&c=sc&poi=auto&orient=true&h=512"
+      width="200"
+      height="200"
+      alt="Lasagna Image"
+    />
+    <h2>How to Make Basic Beef Burger Patties</h2>
+    <p>
+      Nothing says summer quite like a juicy grilled burger. You'll find the
+      full recipe below with step-by-step instructions, but here's what you can
+      expect when you make these top-rated burger patties:
+    </p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li><span>1 large egg</span></li>
+      <li><span>½ teaspoon salt</span></li>
+      <li><span>½ teaspoon ground black pepper</span></li>
+      <li><span>1 pound ground beef</span></li>
+      <li><span>½ cup fine dry bread crumbs</span></li>
+    </ul>
+    <h2>Directions</h2>
+    <ol>
+      <li>
+        <span
+          >Preheat an outdoor grill for high heat and lightly oil grate.</span
+        >
+      </li>
+      <br />
+      <li>
+        <span>Whisk together egg, salt, and pepper in a medium bowl. </span
+        ><br /><br />
+        <img
+          src="https://www.allrecipes.com/thmb/ejYc4Z595xyLr3pYhRudbHYYKpY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25473-the-perfect-basic-burger-ddmfs-Step1-4x3-88c586ec9b9943fe84257fdce3db9971.jpg"
+          width="300"
+        />
+      </li>
+      <br />
+      <li>
+        <span
+          >Add ground beef and bread crumbs and mix with your hands or a fork
+          until well blended. </span
+        ><br /><br />
+        <img
+          src="https://www.allrecipes.com/thmb/REfyjjwOOsP1NgDpSIUuSI70kEE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25473-the-perfect-basic-burger-ddmfs-Step2-4x3-6ce4908408304d92aedfc5f22dc16669.jpg"
+          width="300"
+        />
+      </li>
+      <br />
+      <li>
+        <span>Form into four 3/4-inch-thick patties. </span><br /><br />
+        <img
+          src="https://www.allrecipes.com/thmb/_-DTNxcIh0RDOioZxaJTVuYmXUo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25473-the-perfect-basic-burger-ddmfs-Step3-4x3-cf6321a5f613446ea6d50e60ade7473e.jpg"
+          width="300"
+        />
+      </li>
+      <li>
+        <span
+          >Place patties on the preheated grill. Cover and cook 6 to 8 minutes
+          per side, or to desired doneness. An instant-read thermometer inserted
+          into the center should read at least 160 degrees F (70 degrees
+          C).</span
+        ><br /><br />
+        <img
+          src="https://www.allrecipes.com/thmb/L-amk0sGapeHkqeonFVO4d9OEVM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25473-the-perfect-basic-burger-ddmfs-Step4-4x3-e462a501f4594502ab549e89230af242.jpg"
+          width="300"
+        />
+      </li>
+      <br />
+      <li>
+        <span>Now Enjoy baby :)</span><br /><br />
+        <img
+          src="https://www.allrecipes.com/thmb/5bbowF39Flo1sblOqjMQifuj1a8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/25473-the-perfect-basic-burger-DDMFS-4x3-56eaba3833fd4a26a82755bcd0be0c54.jpg"
+          width="300"
+        />
+      </li>
+      <br />
+    </ol>
+    <table cellpadding="10" cellspacing="0" border="1">
+      <tr>
+        <td colspan="4" align="center" style="font-size: 24px">
+          <strong>Nutrition Facts (per serving)</strong>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center" style="font-size: 18px">
+          <strong>Calories</strong>
+        </td>
+        <td align="center" style="font-size: 18px"><strong>Fat</strong></td>
+        <td align="center" style="font-size: 18px"><strong>Carbs</strong></td>
+        <td align="center" style="font-size: 18px"><strong>Protein</strong></td>
+      </tr>
+      <tr>
+        <td align="center">317</td>
+        <td align="center">18g</td>
+        <td align="center">10g</td>
+        <td align="center">27g</td>
+      </tr>
+    </table>
+    <br />
+    <footer>
+      <div>
+        <a href="/recipes/lasagna.html">Previous</a> | <a href="/">Home</a> |
+        <a href="/recipes/pizza.html">Next</a>
+      </div>
+      <div id="typingSection">
+        <span id="typingAnimation"></span>
+      </div>
+    </footer>
+    <script>
+        const text = "Made with ♡ By Tou";
+        let index = 0;
+        const typingSpeed = 100; // Adjust typing speed (in milliseconds)
+        let animationStarted = false;
+      
+        function typeText() {
+          if (index < text.length) {
+            document.getElementById("typingAnimation").textContent += text.charAt(index);
+            index++;
+            setTimeout(typeText, typingSpeed);
+          }
+        }
+      
+        function startTypingAnimation() {
+          if (!animationStarted) {
+            animationStarted = true;
+            typeText();
+          }
+        }
+      
+        function isElementInViewport(el) {
+          const rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      
+        function onScroll() {
+          const typingSection = document.getElementById("typingSection");
+          if (isElementInViewport(typingSection)) {
+            startTypingAnimation();
+            window.removeEventListener("scroll", onScroll);
+          }
+        }
+      
+        // Add event listener for scroll
+        window.addEventListener("scroll", onScroll);
+      </script>
+  </body>
+</html>
